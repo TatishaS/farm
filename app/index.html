@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Своими руками</title>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body class="main__body">
+    <header class="header">
+      <nav>
+        <div class="container">
+          <div class="header__logo">
+            <a
+              ><img class="header__logo-img" src="./images/logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <form class="form col-xs-12">
+        <div class="form-group">
+          <h6 class="form__label col-xs-9 center-block">
+            рейтинг оценка мнение поставьте звездочки
+          </h6>
+          <div class="form__rating">
+            <div class="form__rating-items">
+              <input
+                type="radio"
+                id="rating-5"
+                class="form__rating-item"
+                name="rating"
+                value="5"
+              />
+              <label for="rating-5" class="form__rating-label"></label>
+              <input
+                type="radio"
+                id="rating-4"
+                class="form__rating-item"
+                name="rating"
+                value="4"
+              />
+              <label for="rating-4" class="form__rating-label"></label>
+              <input
+                type="radio"
+                id="rating-3"
+                class="form__rating-item"
+                name="rating"
+                value="3"
+              />
+              <label for="rating-3" class="form__rating-label"></label>
+              <input
+                type="radio"
+                id="rating-2"
+                class="form__rating-item"
+                name="rating"
+                value="2"
+              />
+              <label for="rating-2" class="form__rating-label"></label>
+              <input
+                type="radio"
+                id="rating-1"
+                class="form__rating-item"
+                name="rating"
+                value="1"
+              />
+              <label for="rating-1" class="form__rating-label"></label>
+            </div>
+          </div>
+          <label class="col-xs-3" for="email"></label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Напишите"
+          />
+        </div>
+        <button class="btn form-btn">Отправить</button>
+      </form>
+    </main>
+    <footer class="footer"></footer>
+
+    <!-- Modal-->
+    <div class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="'./images/close.svg" alt="close" width="10" height="10" />
+        </div>
+        <div class="modal__title"><span>Связаться с нами:</span></div>
+        <div class="modal__body"></div>
+      </div>
+    </div>
+
+    <!-- Modal end-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
