@@ -252,10 +252,10 @@
   resize: none;
   outline: none;
   overflow: hidden;
-  background-image: url(../images/list.svg);
+  /*   background-image: url(../images/list.svg);
   background-size: 40px 40px;
   background-repeat: no-repeat;
-  background-position: 12px center;
+  background-position: 12px center; */
 }
 
 .form__textarea::placeholder {
@@ -265,10 +265,48 @@
   line-height: 21px;
 }
 
+.form__textarea-wrapper {
+  position: relative;
+}
+
+.form__file-input {
+  display: none;
+}
+
+input[type='file'] {
+  display: block;
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.form__file-btn {
+  cursor: pointer;
+  position: absolute;
+  content: '';
+  top: 11px;
+  left: 16px;
+  width: 50px;
+  height: 42px;
+  background-image: url(../images/list.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
 /* TEXTAREA - ДЛИННАЯ ФОРМА */
 
 .form__textarea--long {
   background-color: #fff;
+}
+
+.form__file-btn-border {
+  cursor: pointer;
+  position: absolute;
+  content: '';
+  top: -1px;
+  left: 19px;
+  width: 55px;
+  height: 55px;
   background-image: url(../images/list-border.svg);
   background-size: 40px 40px;
   background-repeat: no-repeat;
