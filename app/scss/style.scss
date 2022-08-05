@@ -17,37 +17,37 @@
 
 .feedback {
   padding-bottom: 26px;
+}
 
-  &__title {
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 38px;
-    text-align: center;
-    margin-bottom: 13px;
+.feedback__title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.feedback__decor {
+  position: relative;
+  margin-bottom: 19px;
+
+  &::after {
+    position: absolute;
+    display: block;
+
+    content: '';
+    width: 17px;
+    height: 18px;
+    top: 25px;
+    right: 0;
+    background: url(../images/yellow-element.svg) no-repeat;
+    z-index: 10;
   }
+}
 
-  &__decor {
-    position: relative;
-    margin-bottom: 19px;
-
-    &::after {
-      position: absolute;
-      display: block;
-
-      content: '';
-      width: 17px;
-      height: 18px;
-      top: 25px;
-      right: 0;
-      background: url(../images/yellow-element.svg) no-repeat;
-      z-index: 10;
-    }
-  }
-
-  &__decor-img {
-    width: 118px;
-    height: 59px;
-  }
+.feedback__decor-img {
+  width: 118px;
+  height: 59px;
 }
 
 .form__label {
@@ -129,7 +129,7 @@
   }
 }
 
-/* make all stars orange on rating group hover */
+/* make all stars yellow on rating group hover */
 
 .form__rating:hover .form__rating-label .form__rating-star {
   fill: $accent-yellow;
@@ -316,4 +316,96 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+/* ФОРМА Благодарности */
+
+.thanks {
+  padding-top: 20px;
+  padding-bottom: 26px;
+}
+.thanks__title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.thanks__decor {
+  position: relative;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    display: block;
+
+    content: '';
+    width: 17px;
+    height: 18px;
+    top: 48px;
+    right: -9px;
+    background: url(../images/yellow-element.svg) no-repeat;
+    z-index: 10;
+  }
+  &::before {
+    position: absolute;
+    display: block;
+
+    content: '';
+    width: 14px;
+    height: 15px;
+    top: 22px;
+    left: 5px;
+    background: url(../images/blue-element.svg) no-repeat;
+    z-index: 10;
+  }
+}
+
+.thanks__decor-img {
+  width: 135px;
+  height: 58px;
+}
+
+.thanks__info {
+  position: relative;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    display: block;
+
+    content: '';
+    width: 16px;
+    height: 16px;
+    bottom: 36px;
+    left: 0px;
+    background: url(../images/orange-element.svg) no-repeat;
+    z-index: 10;
+  }
+}
+
+.thanks__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+.thanks__number {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.thanks__link {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+
+  color: #fff;
+  margin-bottom: 25px;
 }

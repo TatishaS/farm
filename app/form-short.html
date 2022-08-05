@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
-  <body>
+  <body class="form-short__body">
     <header class="header">
       <div class="container">
         <div class="row xs-12">
@@ -23,236 +23,64 @@
 
     <main class="main">
       <div class="container">
-        <section class="feedback">
+        <section class="thanks">
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="feedback__title">Мир вращается вокруг вас</h1>
+              <h2 class="thanks__title">Благодарим за отзыв!</h2>
             </div>
             <div class="col-xs-12">
-              <div class="feedback__decor">
+              <div class="thanks__decor">
                 <img
-                  class="feedback__decor-img center-block"
-                  src="./images/fruit.svg"
-                  alt="фрукты"
-                  width="118"
-                  height="59"
+                  class="thanks__decor-img center-block"
+                  src="./images/check-heart.svg"
+                  alt="благодарность"
+                  width="135"
+                  height="58"
                 />
               </div>
             </div>
-          </div>
-          <form class="form">
-            <div class="row">
-              <fieldset class="form__fieldset center-block">
-                <h2 class="form__label col-xs-9 center-block">
-                  Оцените качество продукции
-                </h2>
-
-                <div class="form__rating">
-                  <input
-                    disabled
-                    checked
-                    class="form__rating-item form__rating-item--none visually-hidden"
-                    id="star0"
-                    value="0"
-                    type="radio"
-                    name="rating"
-                  />
-
-                  <label
-                    for="star1"
-                    class="form__rating-label"
-                    aria-label="1 звезда"
-                  >
-                    <svg class="form__rating-star" width="50" height="50">
-                      <use xlink:href="#star"></use>
-                    </svg>
-                  </label>
-                  <input
-                    type="radio"
-                    id="star1"
-                    class="form__rating-item visually-hidden"
-                    name="rating"
-                    value="1"
-                    checked
-                  />
-
-                  <label
-                    for="star2"
-                    class="form__rating-label"
-                    aria-label="2 звезды"
-                    ><svg class="form__rating-star" width="50" height="50">
-                      <use xlink:href="#star"></use></svg
-                  ></label>
-                  <input
-                    type="radio"
-                    id="star2"
-                    class="form__rating-item visually-hidden"
-                    name="rating"
-                    value="2"
-                  />
-
-                  <label
-                    for="star3"
-                    class="form__rating-label"
-                    aria-label="3 звезды"
-                    ><svg class="form__rating-star" width="50" height="50">
-                      <use xlink:href="#star"></use></svg
-                  ></label>
-                  <input
-                    type="radio"
-                    id="star3"
-                    class="form__rating-item visually-hidden"
-                    name="rating"
-                    value="3"
-                  />
-
-                  <label
-                    for="star4"
-                    class="form__rating-label"
-                    aria-label="4 звезды"
-                    ><svg class="form__rating-star" width="50" height="50">
-                      <use xlink:href="#star"></use></svg
-                  ></label>
-                  <input
-                    type="radio"
-                    id="star4"
-                    class="form__rating-item visually-hidden"
-                    name="rating"
-                    value="4"
-                  />
-
-                  <label
-                    for="star5"
-                    class="form__rating-label"
-                    aria-label="5 звезд"
-                    ><svg class="form__rating-star" width="50" height="50">
-                      <use xlink:href="#star"></use></svg
-                  ></label>
-                  <input
-                    type="radio"
-                    id="star5"
-                    class="form__rating-item visually-hidden"
-                    name="rating"
-                    value="5"
-                  />
-                </div>
-              </fieldset>
-            </div>
-            <div class="row">
-              <fieldset class="form__fieldset center-block">
-                <h2
-                  class="form__label form__label--courier col-xs-9 center-block"
-                >
-                  Оцените работу сборщика-курьера
-                </h2>
-                <div class="form__checkboxes">
-                  <div class="container">
-                    <div class="form__checkbox-wrapper col-xs-3">
-                      <input
-                        class="form__checkbox-item visually-hidden"
-                        type="checkbox"
-                        name="checks"
-                        value="1"
-                        id="wear"
-                      />
-                      <label
-                        class="form__checkbox-label form__checkbox-label--wear"
-                        for="wear"
-                        >Одет с иголочки</label
-                      >
-                    </div>
-                    <div class="form__checkbox-wrapper col-xs-3">
-                      <input
-                        class="form__checkbox-item visually-hidden"
-                        type="checkbox"
-                        name="checks"
-                        value="2"
-                        id="time"
-                      />
-                      <label
-                        class="form__checkbox-label form__checkbox-label--time"
-                        for="time"
-                        >Привез вовремя</label
-                      >
-                    </div>
-                    <div class="form__checkbox-wrapper col-xs-3">
-                      <input
-                        class="form__checkbox-item visually-hidden"
-                        type="checkbox"
-                        name="checks"
-                        value="3"
-                        id="polite"
-                      />
-                      <label
-                        class="form__checkbox-label form__checkbox-label--polite"
-                        for="polite"
-                        >Тактичен и вежлив</label
-                      >
-                    </div>
-                    <div class="form__checkbox-wrapper col-xs-3">
-                      <input
-                        class="form__checkbox-item visually-hidden"
-                        type="checkbox"
-                        name="checks"
-                        value="4"
-                        id="wait"
-                      />
-                      <label
-                        class="form__checkbox-label form__checkbox-label--wait"
-                        for="wait"
-                        >Подождал 3 минуты</label
-                      >
-                    </div>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div class="row">
-              <h2
-                class="form__label form__label--opinion col-xs-9 center-block"
-              >
-                Что сделать, чтобы быть лучше?
-              </h2>
-              <div class="form__textarea-wrapper">
-                <textarea
-                  rows="2"
-                  class="form__textarea center-block"
-                  placeholder="Напишите что-нибудь, если хотите..."
-                ></textarea>
-              </div>
+            <div class="col-xs-10 center-block">
+                <div class="thanks__info">
+              <p class="thanks__text">
+                До получения фермерского талона вам осталось заказывать продукты
+                в течение
+              </p>
+                <span class="thanks__number">X недель</span>
+                <a class="thanks__link">Подробнее</a>
             </div>
 
+            </div>
+      
+
+            </div>
             <div class="form__contacts">
-              <a href="#" class="form__telegram">
-                <img
-                  src="./images/telegram.svg"
-                  alt="Наш Телеграм"
-                  class="form__telegram-img"
-                  width="42"
-                  height="42"
-                />
-              </a>
-              <div class="form__contact-info">
-                <a class="form__tel" href="tel:+78002220101">8(800)222-01-11</a>
-                <a class="form__email" href="mailto:tochno@svoimi.ru"
-                  >tochno@svoimi.ru</a
-                >
+                <a href="#" class="form__telegram">
+                  <img
+                    src="./images/telegram.svg"
+                    alt="Наш Телеграм"
+                    class="form__telegram-img"
+                    width="42"
+                    height="42"
+                  />
+                </a>
+                <div class="form__contact-info">
+                  <a class="form__tel" href="tel:+78002220101">8(800)222-01-11</a>
+                  <a class="form__email" href="mailto:tochno@svoimi.ru"
+                    >tochno@svoimi.ru</a
+                  >
+                </div>
+                <a href="#" class="form__vk">
+                  <img
+                    src="./images/vk.svg"
+                    alt="Наша группа Вконтакте"
+                    class="form__vk-img"
+                    width="42"
+                    height="42"
+                  />
+                </a>
               </div>
-              <a href="#" class="form__vk">
-                <img
-                  src="./images/vk.svg"
-                  alt="Наша группа Вконтакте"
-                  class="form__vk-img"
-                  width="42"
-                  height="42"
-                />
-              </a>
-            </div>
+          </div>
 
-            <button class="form__btn center-block" type="submit">
-              oтправить
-            </button>
-          </form>
         </section>
       </div>
     </main>
