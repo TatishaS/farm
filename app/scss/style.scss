@@ -257,19 +257,6 @@
   background-repeat: no-repeat;
   background-position: 12px center;
 }
-.form__textarea-wrapper {
-  position: relative;
-}
-.form__textarea::before {
-  position: absolute;
-  content: '';
-  width: 40px;
-  height: 40px;
-  top: 24px;
-  left: 0px;
-  background: url(../images/list.svg) no-repeat;
-  z-index: 10;
-}
 
 .form__textarea::placeholder {
   color: $dark-green;
@@ -278,11 +265,21 @@
   line-height: 21px;
 }
 
+/* TEXTAREA - ДЛИННАЯ ФОРМА */
+
+.form__textarea--long {
+  background-color: #fff;
+  background-image: url(../images/list-border.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 12px 13px;
+}
+
 /* CONTACTS */
 
 .form__contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 32px;
 }
