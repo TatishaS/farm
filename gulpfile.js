@@ -60,8 +60,10 @@ function styles() {
 function build() {
   return src(
     [
+      'app/css/bootstrap.min.css',
       'app/css/style.min.css',
       'app/fonts/**/*',
+      'app/js/libs/bootstrap.min.js',
       'app/js/main.min.js',
       'app/*.html',
     ],
