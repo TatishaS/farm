@@ -8,9 +8,9 @@ body {
   font-family: 'Futura PT', 'Tahoma', sans-serif;
   background-color: $bg-color;
   color: $text-color;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 26px;
   word-wrap: break-word;
 }
 
@@ -29,8 +29,6 @@ body {
 
 .container {
   max-width: $mw + px;
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
 .center-block {
@@ -38,4 +36,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   float: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
