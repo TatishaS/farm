@@ -568,3 +568,70 @@ input[type='file'] {
   text-decoration: none;
   border-bottom: 2px solid #0c5130;
 }
+
+/* REVIEW */
+
+.thanks__big-title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.thanks__decor--review {
+  position: relative;
+  margin-bottom: 30px;
+  &::before {
+    top: -81px;
+  }
+
+  &::after {
+    top: 11px;
+  }
+}
+
+.thanks__decor-img--review {
+  width: 146px;
+  height: 58px;
+}
+.thanks__note {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* CONGRATS */
+
+.thanks__decor--congrats {
+  &::before {
+    top: -81px;
+  }
+
+  &::after {
+    top: -17px;
+  }
+}
+
+.thanks__decor-img--congrats {
+  width: 240px;
+  height: 148px;
+}
+
+.thanks__note-wrapper {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: block;
+
+    content: '';
+    width: 16px;
+    height: 16px;
+    bottom: 36px;
+    left: 0px;
+    background: url(../images/orange-element.svg) no-repeat;
+    z-index: 10;
+  }
+}
