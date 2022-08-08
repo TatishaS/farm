@@ -246,7 +246,7 @@
   line-height: 21px;
   padding: 11px;
   padding-left: 63px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 25px;
   resize: none;
@@ -269,17 +269,31 @@
   position: relative;
 }
 
+/* MULTIPLE  FILES UPLOAD INPUT */
+
 .form__file-input {
   display: none;
 }
 
 input[type='file'] {
-  display: block;
+  display: none;
   font-size: 12px;
   margin: 0 auto;
 }
+.form__files-area {
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+.form__file-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 
-.form__file-btn {
+.form__file-listitem {
+  margin: 0 8px 20px 8px;
+}
+.form__upload-btn {
   cursor: pointer;
   position: absolute;
   content: '';
@@ -293,13 +307,90 @@ input[type='file'] {
   background-position: 12px center;
 }
 
+.form__file-listitem--btn {
+  margin: 0 8px 20px 8px;
+  width: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__upload-btn {
+  cursor: pointer;
+  position: absolute;
+  content: '';
+  top: 11px;
+  left: 16px;
+  width: 50px;
+  height: 42px;
+  background-image: url(../images/list.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 12px center;
+}
+
+.form__file-preview {
+  position: relative;
+  border-radius: 20px;
+  width: 89px;
+  height: 134px;
+  background-image: url(../images/photo-sample.png);
+  background-size: cover;
+}
+
+.form__file-delete-btn {
+  position: absolute;
+  color: #fff;
+  top: 6px;
+  right: 6px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
+  display: block;
+  padding: 2px;
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.form__file-preview--loading {
+  &::after {
+    content: '';
+    position: absolute;
+    background: rgba(89, 89, 89, 0.6);
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+}
+
+.form__file-add-btn {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 3px solid #595959;
+
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 /* TEXTAREA - ДЛИННАЯ ФОРМА */
 
 .form__textarea--long {
   background-color: #fff;
 }
 
-.form__file-btn-border {
+.form__upload-btn-border {
   cursor: pointer;
   position: absolute;
   content: '';
